@@ -1,12 +1,14 @@
 {
   "name": "next.js-component-library",
   "version": "1.0.0",
+  "type": "module",
   "description": "next js ui component library for easy development",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:dev": "rollup -c --environment NODE_ENV:development",
+    "build": "rollup -c --environment NODE_ENV:production"
   },
-  "keywords":[
+  "keywords": [
     "react",
     "next.js",
     "component",
@@ -14,5 +16,14 @@
     "npm"
   ],
   "author": "Rifat",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {
+    "next": "^14.2.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.21.1"
+  }
 }
