@@ -1,0 +1,18 @@
+{
+  "name": "next.js-component-library",
+  "version": "1.0.0",
+  "description": "next js ui component library for easy development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords":[
+    "react",
+    "next.js",
+    "component",
+    "ui library",
+    "npm"
+  ],
+  "author": "Rifat",
+  "license": "ISC"
+}
